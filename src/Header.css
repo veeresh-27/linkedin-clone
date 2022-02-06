@@ -29,6 +29,7 @@
     height: 20px;
     color: gray;
     background-color: #eef3f8;
+    border-radius: 4px;
 }
 
 .header__search input{
