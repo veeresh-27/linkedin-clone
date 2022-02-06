@@ -1,0 +1,68 @@
+/* login page asthetic UI */
+.login{
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: lightgray;
+}
+
+.login__header{
+    /* width: 70px;
+    height: 20px; */
+}
+
+.login__header img{
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+    
+}
+.forms{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forms input{
+    font-size: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 350px;
+    height: 50px;
+}
+
+.forms button{
+    border:1px solid #0a66c2;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background-color: #0a66c2;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 5px;
+    width: 350px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.login p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.login__register{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #0a66c2;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 4px;
+}
+
+
