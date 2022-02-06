@@ -28,24 +28,16 @@ function App() {
       }
     })
   },[])
-  return (
-  
-    <div className="app">
+  return (!user ?(<Login/>):(
+        <div className="app">
        <Header/>
-      {!user ?(<Login/>):(
-       
         <div className="app__body">
           <Sidebar/>
           <Feed/>
           <Widget/>
-        </div>)}
-        
-        
-         
-        
-        {/* footer */}
-
-    </div>
+        </div>
+        </div>)        
+    
   );
 }
 

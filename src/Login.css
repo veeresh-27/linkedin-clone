@@ -36,7 +36,7 @@
     height: 50px;
 }
 
-.forms button{
+.forms button,.login__register button{
     border:1px solid #0a66c2;
     border-radius: 5px;
     margin-top: 8px;
@@ -51,12 +51,17 @@
 }
 
 .login p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 16px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    
+   
+    align-items: flex-start;
 }
 .login__register{
-    margin-top: 20px;
+   
     margin-bottom: 20px;
     font-size: 20px;
     color: #0a66c2;

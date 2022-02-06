@@ -62,7 +62,7 @@ function Login() {
         <p>
             Not a member?
             <span className='login__register' onClick={register}>
-                Signup
+                <button>SingUp</button>
 
             </span>
         </p>
