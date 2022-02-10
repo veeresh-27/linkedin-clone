@@ -23,6 +23,7 @@
 .widget__article{
     display: flex;
     padding: 10px;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 .widget__article:hover{

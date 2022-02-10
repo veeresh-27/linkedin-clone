@@ -27,10 +27,10 @@ function Header() {
  
   return(<div className='header'>
     <div className="header__left">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="" />
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Logo" />
       <div className="header__search">
         <SearchIcon />
-        <input type="text" />
+        <input placeholder='Seacrh' type="text" />
       </div>
     </div>
     <div className="header__right">
@@ -39,7 +39,7 @@ function Header() {
       <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
       <HeaderOption Icon={ChatIcon} title="Messaging"/>
       <HeaderOption Icon={NotificationsIcon} title="Notifications"/>
-      <HeaderOption avatar={true} title="Me"
+      <HeaderOption avatar={true} title="Logout"
       onClick={logoutOfApp}
       />
       

@@ -19,14 +19,14 @@ function Login() {
         auth.createUserWithEmailAndPassword(email,password).then((userAuth)=>{
             userAuth.user.updateProfile({
                 displayName: name,
-                photoURL: photo
+                photoUrl: photo
             })
             .then(()=>{
                 dispatch(login({
                     email:userAuth.user.email,
                     uid: userAuth.user.uid,
                     displayName: name,
-                    photoURL: photo,
+                    photoUrl: photo,
                 }))
             })
         }).catch((error)=>alert(error));
@@ -40,7 +40,7 @@ function Login() {
                 email:userAuth.user.email,
                 uid: userAuth.user.uid,
                 displayName: name,
-                photoURL: photo,
+                photoUrl: photo,
             }))
         }).catch(error=>alert(error))
     }
@@ -51,7 +51,7 @@ function Login() {
         </div>
         <form className='forms' action="">
             <input value={name} onChange={(e)=>setName(e.target.value)} placeholder='Full Name (Required if not registered)' type="text" />
-            <input value={photo} onChange={(e)=>setPhoto(e.target.value)} placeholder='Profile Picture (Optional)' type="text" />
+            <input value={photo} onChange={(e)=>setPhoto(e.target.value)} placeholder='Profile Picture URL (Optional)' type="text" />
             <input value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Email' type="email" />
             <input value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='Password' type="password" />
 

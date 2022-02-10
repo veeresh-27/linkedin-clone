@@ -45,7 +45,7 @@ function Feed() {
         <div className="feed__input">
             <CreateIcon/>
             <form action="">
-                <input value={input} onChange={e =>setInput(e.target.value)} type="text" />
+                <input placeholder='Write your Post' value={input} onChange={e =>setInput(e.target.value)} type="text" />
                 <button onClick={sendPost} type='submit'>Send</button>
             </form>
         </div>

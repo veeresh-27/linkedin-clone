@@ -4,9 +4,8 @@ import ThumbUpAltOutlinedIcon from '@material-ui/icons/ThumbUpAltOutlined';
 import ChatOutlinedIcon from '@material-ui/icons/ChatOutlined';
 import ShareOutlinedIcon from '@material-ui/icons/ShareOutlined';
 import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
-
 import React,{forwardRef} from 'react';
-
+import firebase from 'firebase/app';
 
 import InputOption from './InputOption';
 import './Post.css';
@@ -32,6 +31,7 @@ const Post = forwardRef(({name,description,photoUrl,message},ref) =>{
             <InputOption Icon={ChatOutlinedIcon} title='Comment' color='gray'/>
             <InputOption Icon={ShareOutlinedIcon} title='Share' color='gray'/>
             <InputOption Icon={SendOutlinedIcon} title='Send' color='gray'/>
+
         </div>
   </div>;
 })

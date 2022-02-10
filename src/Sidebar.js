@@ -22,7 +22,7 @@ function Sidebar() {
   return <div className='sidebar'>
     <div className="sidebar__top">
         <img src="https://media.istockphoto.com/photos/triangular-colorful-background-picture-id641352048?k=20&m=641352048&s=612x612&w=0&h=k1MVORiqUs6bYNwDlpGCb_HDkSyHgSRRu60NsKrosoY=" alt="" />
-        <Avatar src={user.photoURL}  className="sidebar__avatar">
+        <Avatar src={user.photoUrl}  className="sidebar__avatar">
             {user.displayName[0]}
         </Avatar>
         <h2>

@@ -1,10 +1,11 @@
 .sidebar{
     top: 80px;
     position: sticky;
-    float: 0.2;
+    flex: .15;
     border-radius: 8px;
     text-align: center;
     height: fit-content;
+
 }
 
 .sidebar__avatar{
@@ -93,6 +94,7 @@
     color: gray;
     cursor: pointer;
     padding: 5px;
+    transition: all .2s ease-in-out;
 }
 
 .sidebar__recentItems:hover{

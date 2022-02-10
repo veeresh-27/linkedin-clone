@@ -6,17 +6,19 @@
     margin-right: 20px;
     color: gray;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .headerOption__icon{
    object-fit: contain;
-   height: 25px !important;
-   width: 25px !important;
+   height: 30px !important;
+   width: 30px !important;
 
 }
 
-.headerOption__icon img{
-  
+.HeaderOption__title{
+
+  font-size: 12px;
 }
 
 .headerOption:hover{

@@ -5,11 +5,13 @@
     margin-top: 16px;
     color: gray;
     padding: 10px;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 .inputoption:hover{
     background-color: whitesmoke;
     border-radius: 10px;
+    transform: scale(1.05);
 }
 
 .inputoption h4{
