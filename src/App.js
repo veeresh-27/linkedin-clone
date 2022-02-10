@@ -21,7 +21,7 @@ function App() {
           email:userAuth.email,
           uid: userAuth.uid,
           displayName: userAuth.displayName,
-          photoUrl:userAuth.photoUrl,
+          photoUrl:userAuth.photoURL,
         }))
       }else{
         dispatch(logout());
@@ -30,12 +30,12 @@ function App() {
   },[])
   return (!user ?(<Login/>):(
         <div className="app">
-       <Header/>
-        <div className="app__body">
-          <Sidebar/>
-          <Feed/>
-          <Widget/>
-        </div>
+          <Header/>
+          <div className="app__body">
+            <Sidebar/>
+            <Feed/>
+            <Widget/>
+          </div>
         </div>)        
     
   );
